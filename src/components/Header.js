@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from "prop-types";
+
 
 const Header = ({ titulo }) => {
   //Por materialized se le agrega #! 
@@ -12,5 +14,9 @@ const Header = ({ titulo }) => {
     </nav>
   );
 }
- 
+
+Header.proTypes = {
+  titulo: PropTypes.string.isRequired
+}
+
 export default Header;
